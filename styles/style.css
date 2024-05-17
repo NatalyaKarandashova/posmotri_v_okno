@@ -82,6 +82,10 @@ ol {
     gap: 5px;
 }
 
+.search-form__label:focus {
+    outline: none;
+}
+
 .search-form__label:has(:focus-visible) {
     outline: 1px solid #fff;
     outline-offset: 2px;
@@ -103,27 +107,26 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 19px;
     height: 19px;
     border: 1px solid #fff;
-    position: relative;
+    
 }
 
 .search-form__pseudo-checkbox::before {
     content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     background-color: #fff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: none;
 }
 
 .search-form__label input:checked + .search-form__pseudo-checkbox::before {
     display: block;
+    
 }
 
 .search-form__textfield {
@@ -282,10 +285,6 @@ fieldset {
     border: 1px solid #fff;
     margin-top: 30px;
 }
-
-.preloader-template {
-    position: absolute;
-} 
 
 .visually-hidden {
     position: absolute;
