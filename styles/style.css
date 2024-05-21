@@ -154,10 +154,6 @@ fieldset {
     outline: none;
 }
 
-.search-form__textfield:focus-visible {
-    outline: 1px solid #fff;
-}
-
 .search-form__checkbox-list {
     display: flex;
     flex-direction: row;
